@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>TO DO List</title>
+	</head>
+	<body>
+		<div class="to-do-app">
+			<section class="add-item">
+				<form>
+					<input type="text" id="item-name" placeholder="Add item ...." />
+					<input type="submit" id="add" value="+" />
+				</form>
+			</section>
+
+			<main id="main">
+				<section class="to-do-items" id="to-do-items">
+					<h2><a href="https://linucode.com/pages/projects.html">TO DO</a></h2>
+					<ul class="items" id="item-list">
+						<li class="item">
+							<label>
+								<img src="./img/Tick.svg" class="checkbox"></img>
+								<h4>Pick up email</h4>
+							</label>
+							<img src="./img/Delete.svg" class="delete" />
+						</li>
+						<li class="item">
+							<label>
+								<img src="./img/Tick.svg" class="checkbox"></img>
+								<h4>Buy cat food</h4>
+							</label>
+							<img src="./img/Delete.svg" class="delete" />
+						</li>
+						<li class="item">
+							<label>
+								<img src="./img/Tick.svg" class="checkbox"></img>
+								<h4>Get gift for grandma</h4>
+							</label>
+							<img src="./img/Delete.svg" class="delete" />
+						</li>
+						<li class="item">
+							<label>
+								<img src="./img/Tick.svg" class="checkbox"></img>
+								<h4>Doctors appointment</h4>
+							</label>
+							<img src="./img/Delete.svg" class="delete" />
+						</li>
+					</ul>
+				</section>
+
+				<section class="completed-items" >
+					<h2>COMPLETED</h2>
+					<ul class="items completed-list" id="completed-items">
+						<li class="item completed">
+							<label>
+								<img src="./img/Complited Tick.svg" class="checkbox"></img>
+								<h4>Watter plants</h4>
+							</label>
+							<img src="./img/Delete.svg" class="delete" />
+						</li>
+						<li class="item completed">
+							<label>
+								<img src="./img/Complited Tick.svg" class="checkbox"></img>
+								<h4>Feed dog</h4>
+							</label>
+							<img src="./img/Delete.svg" class="delete" />
+						</li>
+						<li class="item completed">
+							<label>
+								<img src="./img/Complited Tick.svg" class="checkbox"></img>
+								<h4>Make some food</h4>
+							</label>
+							<img src="./img/Delete.svg" class="delete" />
+						</li>
+					</ul>
+				</section>
+			</main>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>

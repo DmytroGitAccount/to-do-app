@@ -1,0 +1,177 @@
+*,
+a,
+ul {
+	margin: 0;
+	padding: 0;
+	color: #515151;
+	list-style: none;
+	font-family: 'Roboto';
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	height: 100vh;
+	padding-top: 54px;
+	background: radial-gradient(gray, black);
+}
+h2 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	user-select: none;
+	line-height: 15px;
+}
+h4 {
+	font-size: 14px;
+	user-select: none;
+}
+label {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+main {
+	width: 100%;
+	height: 412px;
+	padding: 25px 30px 0 30px;
+	overflow: auto;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+}
+/*////////////////// ScrollBar /////////////////*/
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+	background: rgb(170, 170, 170);
+	border-radius: 2.5px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(148, 148, 148);
+}
+/*///////////////// To Do App /////////////////*/
+.to-do-app {
+	width: 360px;
+	height: 559px;
+	border-radius: 30px;
+	margin: 0 auto;
+	background: #f6f6f6;
+	box-shadow: 5px 10px 25px 0 rgba(0, 0, 0, 0.25);
+}
+/*/ //////////////// Add Item /////////////////*/
+.add-item {
+	padding: 30px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.add-item form {
+	position: relative;
+}
+input[type='text'] {
+	width: 300px;
+	height: 50px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	padding-left: 25px;
+	border-radius: 25px;
+	background: #e0dfff;
+}
+input[type='submit'] {
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	border: none;
+	outline: none;
+	line-height: 0;
+	cursor: pointer;
+	font-size: 36px;
+	color: #f6f6f6;
+	border-radius: 50%;
+	position: absolute;
+	background: #869ff9;
+}
+input[type='submit']:hover {
+	filter: brightness(90%);
+}
+input[type='text']:focus {
+	border: 1px solid #c7c7c7;
+}
+/*/////////////// To Do Items //////////////////*/
+.to-do-items {
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+}
+.item {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	justify-content: space-between;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.item:last-child {
+	margin-bottom: 0;
+}
+input[type='checkbox'] {
+	border: 0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+input[type='checkbox']:checked ~ .checkbox {
+	background-size: 65%;
+	background-color: #a7efaf;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('./img/Tick.svg');
+}
+
+.checkbox {
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+	border-radius: 50%;
+	border: 1px solid #e5e5e5;
+}
+.item img {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.item img:hover {
+	filter: brightness(90%);
+}
+/*///////////// Completed Items /////////////// */
+.completed-items {
+	padding-bottom: 5px;
+}
+.completed {
+	box-shadow: none;
+	opacity: 50%;
+	text-decoration: line-through;
+}
+
+/*///////////// Mobile Version /////////////// */
+@media screen and (max-width: 360px) {
+	body {
+		padding-top: 0;
+		height: auto;
+	}
+	.to-do-app {
+		border-radius: 0;
+	}
+} ;
