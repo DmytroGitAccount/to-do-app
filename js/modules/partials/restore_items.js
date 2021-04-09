@@ -1,6 +1,11 @@
-export function restoreItems(){
-  var restoreItemList = localStorage.getItem('item-list');
-  var restoreCompletedList = localStorage.getItem('completed-items');
+import {
+  itemList,
+  completedItemsList,
+} from './elements.js';
+
+export function restoreItems() {
+  const restoreItemList = localStorage.getItem('item-list');
+  const restoreCompletedList = localStorage.getItem('completed-items');
 
   if (restoreItemList && restoreCompletedList) {
     itemList.innerHTML = restoreItemList;

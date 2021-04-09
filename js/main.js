@@ -1,21 +1,22 @@
 import {
   addBtn,
-	addItem,
+  addItem,
   itemList,
-	removeItem,
-	completeItem,
+  removeItem,
+  completeItem,
+  restoreItems,
   completedItemsList,
-} from './modules/index.js'
+} from './modules/index.js';
 
-///////////////////// Add item /////////////////////
+/// //////////// Restore saved items ////////////////
+restoreItems();
+/// ////////////////// Add item /////////////////////
 addBtn.addEventListener('click', addItem);
 
-/////////////////// Remove item ////////////////////
+/// //////////////// Remove item ////////////////////
 itemList.addEventListener('click', removeItem);
 completedItemsList.addEventListener('click', removeItem);
 
-///////////////// Complete item ////////////////////
+/// ////////////// Complete item ////////////////////
 itemList.addEventListener('click', completeItem);
 completedItemsList.addEventListener('click', completeItem);
-
-

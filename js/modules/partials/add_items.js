@@ -4,18 +4,18 @@ import {
   itemName,
 } from './elements.js';
 
-import { save } from './save_item.js'
+import { save } from './save_item.js';
 
 // Add Item Function //////////////
 export function addItem(e) {
-	e.preventDefault();
+  e.preventDefault();
 
-	if (itemName.value.length < 1) return;
+  if (itemName.value.length < 1) return;
 
-	var createLi = document.createElement('li');
+  const createLi = document.createElement('li');
 
-	createLi.className = 'item';
-	createLi.innerHTML = `
+  createLi.className = 'item';
+  createLi.innerHTML = `
 
     <label>
         <img src="./img/Tick.svg" class="checkbox"></img>
@@ -25,9 +25,9 @@ export function addItem(e) {
 
     `;
 
-	itemList.appendChild(createLi);
+  itemList.appendChild(createLi);
 
-	itemName.value = '';
+  itemName.value = '';
 
-	save();
+  save();
 }

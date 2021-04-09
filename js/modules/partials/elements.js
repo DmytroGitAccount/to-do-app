@@ -1,8 +1,8 @@
-var main = document.querySelector('#main');
-var addBtn = document.querySelector('#add');
-var itemList = document.querySelector('#item-list');
-var itemName = document.querySelector('#item-name');
-var completedItemsList = document.querySelector('#completed-items');
+const main = document.querySelector('#main');
+const addBtn = document.querySelector('#add');
+const itemList = document.querySelector('#item-list');
+const itemName = document.querySelector('#item-name');
+const completedItemsList = document.querySelector('#completed-items');
 
 export {
   main,
@@ -10,4 +10,4 @@ export {
   itemList,
   itemName,
   completedItemsList,
-}
+};
