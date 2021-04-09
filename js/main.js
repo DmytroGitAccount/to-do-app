@@ -8,15 +8,13 @@ import {
   completedItemsList,
 } from './modules/index.js';
 
-/// //////////// Restore saved items ////////////////
-restoreItems();
-/// ////////////////// Add item /////////////////////
-addBtn.addEventListener('click', addItem);
+function main() {
+  restoreItems();
+  addBtn.addEventListener('click', addItem);
+  itemList.addEventListener('click', removeItem);
+  itemList.addEventListener('click', completeItem);
+  completedItemsList.addEventListener('click', removeItem);
+  completedItemsList.addEventListener('click', completeItem);
+}
 
-/// //////////////// Remove item ////////////////////
-itemList.addEventListener('click', removeItem);
-completedItemsList.addEventListener('click', removeItem);
-
-/// ////////////// Complete item ////////////////////
-itemList.addEventListener('click', completeItem);
-completedItemsList.addEventListener('click', completeItem);
+window.addEventListener('DOMContentLoaded', main);
