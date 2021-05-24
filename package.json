@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "npx live-server",
+		"server": "live-server",
+		"start": "server",
 		"lint": "eslint js"
 	},
 	"author": "",
