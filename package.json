@@ -4,8 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"server": "live-server",
-		"start": "server",
+		"start": "live-server",
 		"lint": "eslint js"
 	},
 	"author": "",
